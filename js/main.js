@@ -1,6 +1,18 @@
 (() => {
+  const header = document.querySelector(".site-header");
+  if (header && !header.classList.contains("site-header--page")) {
+    const onScroll = () => {
+      header.classList.toggle("is-scrolled", window.scrollY > 12);
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+  }
+
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (reduceMotion) return;
+  if (reduceMotion) {
+    document.querySelectorAll(".reveal").forEach((node) => node.classList.add("is-visible"));
+    return;
+  }
 
   const nodes = document.querySelectorAll(".reveal");
   if (!nodes.length || !("IntersectionObserver" in window)) {
