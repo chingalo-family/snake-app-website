@@ -1,0 +1,41 @@
+---
+description: Keep snake-app-website docs, brand, and product claims in sync
+alwaysApply: true
+---
+
+# Snake App Website — Docs & Consistency
+
+Static marketing site for **Snake App** (Chingalo Family). Keep HTML/CSS and `docs/` aligned with the product and brand.
+
+## Scope
+- Site root: `index.html`, `privacy.html`, `css/`, `js/`, `assets/`
+- Docs: `docs/` (see `docs/README.md`)
+- Companion Flutter app: sibling repo **`snake_app`** (not in this tree)
+
+## Required when finishing a change
+1. Review intentional diffs only
+2. Keep **relative** markdown links in `docs/` working
+3. Sync docs in the **same change set** when any of the following change:
+   - Site copy, hero/feature claims, privacy policy wording
+   - Brand tokens, fonts, or visual direction
+   - Contact details (phone, WhatsApp, Instagram)
+   - Screenshots or screenshot order / captions
+   - Marketed product facts (level count, modes, platforms, offline/profile, controls, store status)
+
+| Change | Update |
+|--------|--------|
+| Product story / facts | `docs/ABOUT.md` (+ landing copy if needed) |
+| Pages, assets, deploy | `docs/ARCHITECTURE.md` |
+| Nav / journeys / shot order | `docs/FLOW.md` |
+| Colors, type, screenshots | `docs/DESIGN.md` |
+| Index of docs | `docs/README.md` |
+| Project overview | `README.md` |
+
+## Product claim guardrails
+- Offline-first; profile gates **saving**, not play
+- Do **not** invent Play Store / App Store URLs — use placeholders / coming soon until real
+- Align greens with `#0B1F1A` / `#1FA87A` / `#3ECF98`; avoid purple-indigo defaults
+- When app-side facts change and this repo is available beside `snake_app`, update website `docs/` to match
+
+## Skill
+Prefer `.cursor/skills/snake-app-website-docs/` when editing site copy or docs.
