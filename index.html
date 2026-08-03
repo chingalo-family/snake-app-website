@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Snake App by Chingalo Family — grow, collect, and climb levels in an offline-first snake game for every screen." />
+  <meta name="theme-color" content="#0B1F1A" />
+  <meta property="og:title" content="Snake App" />
+  <meta property="og:description" content="Grow, collect, climb levels — an engaging offline snake game by Chingalo Family." />
+  <meta property="og:image" content="assets/app-icon.png" />
+  <title>Snake App — Chingalo Family</title>
+  <link rel="icon" href="assets/app-icon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/app-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand-lockup" href="index.html" aria-label="Snake App home">
+        <img src="assets/app-icon.png" width="36" height="36" alt="" />
+        Snake App
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#play">Play</a>
+        <a href="#contact">Contact</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-label="Introduction">
+      <div class="hero__media" aria-hidden="true">
+        <img src="assets/screenshots/play.png" alt="" />
+      </div>
+      <div class="hero__veil" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="hero__brand">Snake App</p>
+        <h1 class="hero__headline">Grow, collect, climb levels</h1>
+        <p class="hero__lede">
+          An offline-first snake game with responsive play, tiered collectibles, and local high scores — made by Chingalo Family.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn--primary" href="#contact">Get in touch</a>
+          <a class="btn btn--ghost" href="#play">See the game</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="play">
+      <div class="section__inner">
+        <p class="section__eyebrow reveal">The game</p>
+        <h2 class="section__title reveal">Simple to pick up. Hard to put down.</h2>
+        <p class="section__lede reveal">
+          Swipe on phone, arrows on desktop. Climb thirty levels, chase combos, and save progress with an optional local profile.
+        </p>
+        <div class="shot-rail reveal" aria-label="App screenshots">
+          <figure>
+            <img src="assets/screenshots/home.png" alt="Snake App home screen with Play and navigation" loading="lazy" />
+            <figcaption>Home</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/screenshots/levels.png" alt="Level select list with unlock requirements" loading="lazy" />
+            <figcaption>Levels</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/screenshots/play.png" alt="Gameplay board with score and snake" loading="lazy" />
+            <figcaption>Play</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/screenshots/splash.png" alt="Snake App splash branding" loading="lazy" />
+            <figcaption>Splash</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--raised" id="features">
+      <div class="section__inner">
+        <p class="section__eyebrow reveal">Why players stay</p>
+        <h2 class="section__title reveal">Built for every screen</h2>
+        <ul class="feature-list">
+          <li class="reveal">
+            <h3>Offline first</h3>
+            <p>Play anywhere. High scores and level unlocks stay on your device when you create a local profile.</p>
+          </li>
+          <li class="reveal">
+            <h3>Responsive playground</h3>
+            <p>Portrait or landscape — the board adapts so the grid stays readable on phone, tablet, and desktop.</p>
+          </li>
+          <li class="reveal">
+            <h3>Collect &amp; climb</h3>
+            <p>Tiered foods and animals, combo bonuses, and thirty levels that get faster and denser as you improve.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section__inner">
+        <p class="section__eyebrow reveal">Chingalo Family</p>
+        <h2 class="section__title reveal">Contact</h2>
+        <p class="section__lede reveal">
+          Questions about Snake App, updates, or privacy? Reach us on phone, WhatsApp, or Instagram.
+        </p>
+        <div class="contact-actions reveal">
+          <a class="contact-link" href="tel:+255687168627">
+            <span class="contact-link__icon" aria-hidden="true">☎</span>
+            <span>
+              <strong>Phone</strong>
+              <span>+255 687 168 627</span>
+            </span>
+          </a>
+          <a class="contact-link" href="https://wa.me/255742349206" target="_blank" rel="noopener noreferrer">
+            <span class="contact-link__icon" aria-hidden="true">💬</span>
+            <span>
+              <strong>WhatsApp</strong>
+              <span>+255 742 349 206</span>
+            </span>
+          </a>
+          <a class="contact-link" href="https://www.instagram.com/chingalo_family/" target="_blank" rel="noopener noreferrer">
+            <span class="contact-link__icon" aria-hidden="true">◎</span>
+            <span>
+              <strong>Instagram</strong>
+              <span>@chingalo_family</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>© <span id="year"></span> Chingalo Family · Snake App</p>
+      <p>
+        <a href="privacy.html">Privacy Policy</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = String(new Date().getFullYear());
+  </script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
